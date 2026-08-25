@@ -1,0 +1,32 @@
+{
+  "name": "zombie-runner",
+  "version": "1.0.0",
+  "description": "Zombie Runner game",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0",
+    "electron-builder": "latest"
+  },
+  "build": {
+    "appId": "com.zombierunner.game",
+    "productName": "Zombie Runner",
+    "electronDist": "C:/Users/user31/AppData/Local/electron/Cache/electron-v44.0.0-win32-x64",
+    "win": {
+      "target": "portable"
+    },
+    "files": [
+      "index.html",
+      "main.cjs",
+      "audios/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ]
+  }
+}
